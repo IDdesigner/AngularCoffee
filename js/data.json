@@ -1,0 +1,14 @@
+[
+  {
+    "name":"Sumatra Yum",
+    "origin":"Indonesian",
+    "roast":"Dark",
+    "flavor": "Bitter, Fruity, Spicy"
+  },
+  {
+    "name":"Ethiopian Yerg",
+    "origin":"Africa",
+    "roast":"Medium",
+    "flavor": "Sweet, Fruity, Explosive"
+  }
+]

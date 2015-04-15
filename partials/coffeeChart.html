@@ -1,0 +1,39 @@
+<section>
+	<div class="meeting cf" ng-controller="JavaController">
+		<div>
+			<h1>Coffee Varieties</h1>
+			<form action="" class="formgroup addmeeting cf"
+			name="coffeeForm"
+			ng-submit="addCoffee()"
+			novalidate>
+				<div class="inputwrapper" name="startBrewing">
+					<input type="text" name="addBrand" placeholder="Brand, i.e. Blue Bottle" ng-model="addBrand" ng-required="true">
+				</div><!-- Data to send to firebase -->	
+				<button type="submit" class="btn" ng-disable="coffeeForm.$invalid">+</button>
+				<div>
+					<input type="text" name="addName" placeholder="Name, i.e. Jamican Blue Mountain" ng-model="addName" ng-required="true">
+					<input type="text" name="addOrigin" placeholder="Origin, i.e. Africa, South America, etc." ng-model="addOrigin" ng-required="true">
+					<input type="text" name="addRoast" placeholder="Roast, i.e. Light, Dark, Medium, etc." ng-model="addRoast" ng-required="true">
+					<input type="text" name="addFlavors" placeholder="Characteristics (use commas)" ng-model="addFlavors" ng-required="true">
+				</div>
+			</form>
+		</div>
+		<div class="searchField">
+			<h2>Use the field below to filter results:</h2>
+			<input class="searchFieldMove" ng-model="query" placeholder="Search for keywords" autofocus>
+		</div>
+		<div class="meeting" ng-repeat="list in coffeeList | filter: query">
+			<div class="myOwn">
+				<div>
+					<h3>{{list.brand}} - <span style="color:white">{{list.name}}</span></h3>
+				</div><!-- Main text for panel -->
+				<div>
+					<p>Origin: <span style="color:white">{{list.origin}}</span></p>
+					<p>Roast: <span style="color:white">{{list.roast}}</span></p>
+					<p>Characteristics: <span style="color:white">{{list.flavor}}</span></p>
+					</br>
+				</div><!-- More text from firebase -->
+			</div>
+		</div><!-- coffee list -->
+	</div>
+</section>

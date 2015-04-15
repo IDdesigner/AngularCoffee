@@ -1,0 +1,25 @@
+{
+  "Coffee": {
+    "-JWTjufjj8827ujUJ78K": {
+      "brand" : "Peets",
+      "name" : "Sumatra Yum",
+      "origin" : "Indonesian",
+      "roast" : "Dark",
+      "flavor" : "Bitter, Fruity, Spicy"
+    },
+    "-JWTjufyh8827ujUJ98K": {
+      "brand" : "Peets",
+      "name" : "Mochas Java",
+      "origin" : "Indonesian",
+      "roast" : "Light",
+      "flavor" : "Bold, Savory, Vanilla"
+    },
+    "-JWTjttrj8827ujUJ78": {
+      "brand" : "Peets",
+      "name" : "Ethiopina Harrar",
+      "origin" : "Africa",
+      "roast" : "Medium",
+      "flavor" : "Sweet, Fruity, Spicy"
+    }
+  }    
+}
